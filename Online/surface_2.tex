@@ -8,6 +8,8 @@
 \newtheorem{problem}{Problem}
 \numberwithin{problem}{section}
 
+\newcommand{\dd}{\mathrm{d}}
+
 \newenvironment{solution}
                {\let\oldqedsymbol=\qedsymbol
                 \renewcommand{\qedsymbol}{$\blacktriangleleft$}
@@ -28,14 +30,60 @@ A surface is either a sphere or plane $\Leftrightarrow H^2 = K$.
 \begin{solution}
 
 
+Note that $K=\kappa_1 \kappa_2$ and $H = (\kappa_1 + \kappa_2) / 2$. So $H^2=K\Leftrightarrow\\ \kappa_1 = \kappa_2$.
+
+\begin{itemize}
+
+\item $\Rightarrow$
+
+
+Let's calculate the curvatures for spheres and planes. $?=-\dd \vec{r} \cdot \dd \vec{n}$.
+\begin{itemize}
+
+\item For planes we have $\dd \vec{n} = 0$. So everything is identically $0$.
+
+\item For the unit sphere $r = (\cos u \cos v, \sin u \cos v, \sin v )$.
+And
+$$\vec{r_u}= (-\sin u \cos v, \cos u \cos v, 0), \vec{r_v} = (-\cos u \sin v, -\sin u \sin v, \cos v) $$
+\begin{multline}
+\vec{n} = \vec{r_u} \times \vec{r_v} / |\vec{r_u}| |\vec{r_v}| \\ =  (\cos u \cos ^2 v, \sin u \cos^2 v, \sin^2 u \cos v \sin v +\sin v \sin u \cos v \cos u)/\cos v \\ = (\cos u \cos v, \sin u \cos v, \sin v)
+\end{multline}
+We have that $\vec{r} = \vec{n}$. So
+\begin{multline}
+\dd \vec{r} \\ = (-\sin u \cos v, \cos u \cos v, 0)\dd u + (-\cos u \sin v, -\sin u \sin v, \cos v) \dd v \\ = \dd \vec{n}
+\end{multline}
+And
+\begin{equation}
+II = -\dd \vec{r} \cdot \dd \vec{n} = - \cos^2 v du^2 - \sin^2 v dv^2
+\end{equation}
+\begin{equation}
+I = \dd \vec{r} \cdot \dd \vec{r} = -II = \cos^2 v du^2 + \sin^2 v dv^2
+\end{equation}
+So that the two principle curvatures are all $1$.
+
+\end{itemize}
+
+\item $\Leftarrow$
+
+\end{itemize}
+
+
+
+
+
+
+
 \end{solution}
 \end{problem}
 \begin{problem}
 
-The helicoid $\vec{r} = (u \cos v, u \sin v, bv) $ is a minimal surface. And 
+The helicoid $\vec{r} = (u \cos v, u \sin v, bv) $ is a minimal surface. And that besides planes, all ruled minimal surfaces must be helicoids.
 
 \begin{solution}
 
+Let's recall the definition of minimal surfaces:
+
+Let's calculate their principle curvature.
 
 \end{solution}
 \end{problem}
@@ -44,7 +92,7 @@ The helicoid $\vec{r} = (u \cos v, u \sin v, bv) $ is a minimal surface. And
 If the ?? surface $\vec{r} = (u \cos v, u \sin v, \phi(v))$ is a minimal surface, then it must be the helicoid.
 
 \begin{solution}
-
+Let's calculate their principle curvatures.
 
 \end{solution}
 \end{problem}

@@ -1,0 +1,47 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\pd}{\partial}
+
+\newtheorem{problem}{Problem}
+\numberwithin{problem}{section}
+\title{Fundamental Theorems of the Theories of Curves and Surfaces}
+\newenvironment{solution}
+               {\let\oldqedsymbol=\qedsymbol
+                \renewcommand{\qedsymbol}{$\blacktriangleleft$}
+                \begin{proof}[\bfseries\upshape Solution]}
+               {\end{proof}
+                \renewcommand{\qedsymbol}{\oldqedsymbol}}
+
+\begin{document}
+
+\maketitle
+
+\section{}
+
+\begin{problem}
+
+Prove with the Liouville formula that 
+\begin{itemize}
+\item[(1)] The geodesics on the plane are exactly the straight lines.
+
+\item[(2)] The geodesics on the cylinder are the straight generatrices and helicoids.
+\end{itemize}
+
+\begin{solution}
+
+We remember that the Liouville formula is that 
+$$ k_g = \dfrac{\dd \theta}{\dd s} - \dfrac{1}{2\sqrt{g_{22}}} \dfrac{\pd \ln g_{11} }{\pd u^2} \cos \theta + \dfrac{1}{2\sqrt{g_{11}}} \dfrac{\pd \ln g_{22} }{\pd u^1} \sin \theta$$
+
+\end{solution}
+\end{problem}
+
+
+
+
+\end{document}
