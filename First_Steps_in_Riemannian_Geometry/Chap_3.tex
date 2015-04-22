@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\pd}{\partial}
+\newcommand{\mr}{\mathbb{R}}
+
+\newtheorem{problem}{Problem}
+\numberwithin{problem}{section}
+\title{Connection and Curvature}
+\author{Hu Zheng \\ Department of Mathematics, Zhejiang University}
+\newenvironment{solution}
+               {\let\oldqedsymbol=\qedsymbol
+                \renewcommand{\qedsymbol}{$\blacktriangleleft$}
+                \begin{proof}[\bfseries\upshape Solution:]}
+               {\end{proof}
+                \renewcommand{\qedsymbol}{\oldqedsymbol}}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Affine Connections}
+
+\begin{problem}
+
+\end{problem}
+
+\section{Riemannian Connections}
+
+\section{Curvature}
+
+\section{Harmonic Forms}
+
+\begin{problem}
+Suppose $\alpha \in A^1(M)$, then $$\int_M(\delta\alpha)\eta = 0$$.
+\begin{proof}
+
+\end{proof}
+
+\end{problem}
+
+\begin{problem}
+Suppose $M$ is compact smooth Riemannian manifold without boundary, $h,f\in C^2(M)$. Prove the follow Green formula:
+$$\int_M(h\Delta f-f\Delta h)\eta = 0$$.
+\begin{proof}
+
+\end{proof}
+
+\end{problem}
+
+\begin{problem}
+Take the geodesic polar coordinates on $(M,g)$:
+$$g = (\dd r)^2+g_{ij}(r,\theta)\dd \theta^i\dd \theta^j, 1 \le i,j,k \le m-1$$.
+Suppose $f=f(r)$ is independent from $\{\theta^i\}$, prove that
+$$\Delta f = f''+\dfrac{m-1}{r}f' + f'\dfrac{\pd}{\pd r}\log \sqrt{G}$$,
+where $G=\det(g_{ij})$ and $'$ denotes ordinary differentiation with respect to $r$.
+\begin{proof}
+
+\end{proof}
+
+\end{problem}
+
+\end{document}
