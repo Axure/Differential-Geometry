@@ -35,6 +35,47 @@
 
 \section{Curvature}
 
+\begin{problem}
+Prove the second Bianchi identity in the natural frame:
+$$R_{ijkl,h}+R_{ijlh,k}+R{ijhk,l}=0$$
+\end{problem}
+
+\begin{problem}
+Suppose the Riemann curvature tensor $R$ for a Riemannian manifold $(M^m,g)$ satisfy the following:
+$$R(X,Y,Z,W)=\dfrac{1}{m-1}\{S(Y,Z)g(X,W)-S(Y,W)g(X,Z)\}$$,
+where $S$ is the Ricci tensor, and if $m\ge 3$, $(M^m,g)$ has constant curvature.
+\end{problem}
+
+\begin{problem}
+Suppose $(M^3,g)$ is a three-dimensional Riemannian manifold. At any $p\in M^3$, take the coordinate system $\{x^i\}$, s.t. at $p$ we have $g_{ij} = \left\langle \dfrac{\pd}{\pd x^i}, \dfrac{\pd}{\pd x^j} \right\rangle=0, i\neq j$. Prove that for $i, j, k\neq$ at $p$, the following holds:
+$$R_{ij} = \dfrac{1}{g_kk}R_{ikjk}$$
+$$R_{ii}=\dfrac{1}{g_{jj}}R_{ijij}+\dfrac{1}{g_{kk}}R_{ikjk}$$
+$$R_{ijij}-g_{ii}R_{jj}-g_{jj}R_{ii}+\dfrac{1}{2}\rho g_{ii} g_{jj}$$
+\end{problem}
+
+\begin{problem}
+Suppose $(M^m,g)$ is a connected Einstein manifold and $m\ge 3$,
+
+\begin{itemize}
+\item[(i)] if $m=3$, then $(M^m,g)$ has constant curvature.
+
+\item[(ii)] if the scalar curvature $\rho$ of $(M^m, g)$ does not vanish, then there is no parallel vector field on $(M^m, g)$.
+\end{itemize}
+\end{problem}
+
+\begin{problem}
+Suppose $M^2\subset \mr^3$ is an immersed surface, and has the Riemannian metric induced by the Euclidean metric on $\mr^3$, prove that the sectional curvature on $M^2$ is the Gauss curvature.
+\end{problem}
+
+\begin{problem}
+Calculate the sectional curvature, Ricci curvature and scalar curvature of the sphere $$S^m(r) = \left\{x\in \mr ^{m+1} | \sum_i(x^i)^2=r^2 \mathrm{(constant)} \right\}$$. The Riemannian metric on $S^m(r)$ is induced by the Euclidean metric on $\mr^{m+1}$.
+
+\begin{proof}
+Let's elaborate on the Riemann curvature tensor.
+\end{proof}
+
+\end{problem}
+
 \section{Harmonic Forms}
 
 \begin{problem}
@@ -46,10 +87,14 @@ Suppose $\alpha \in A^1(M)$, then $$\int_M(\delta\alpha)\eta = 0$$.
 \end{problem}
 
 \begin{problem}
-Suppose $M$ is compact smooth Riemannian manifold without boundary, $h,f\in C^2(M)$. Prove the follow Green formula:
+Suppose $M$ is compact smooth Riemannian manifold without boundary, $h,f\in C^2(M)$. Prove the following Green formula:
 $$\int_M(h\Delta f-f\Delta h)\eta = 0$$.
 \begin{proof}
+Recall that $\Delta = -(\dd\delta+\delta\dd)$. $h\Delta$.
 
+According to theorem 3.4.4, we have $(\dd\alpha,\beta)=(\alpha, \delta\beta)$.
+
+we have $$\int_D(h\Delta f)\eta=-\int_D\langle\dd h, \dd f\rangle\eta$$
 \end{proof}
 
 \end{problem}
